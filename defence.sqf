@@ -1,12 +1,13 @@
+///Script by Rodeostar42///
 
 
-
-
+//防衛エリア範囲//
 trg = createTrigger ["EmptyDetector", getPos obj1];
 trg setTriggerArea [200, 50, 207, true];
 trg setTriggerActivation ["EAST", "PRESENT", true];
 trg setTriggerStatements ["this","hint '待ち伏せラインを突破されたぞ'","hint 'よし殺った'"];
 
+//侵入カウントダウン時間//
 private "_time";
 _time = 300;
 
